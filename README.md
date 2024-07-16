@@ -1,9 +1,10 @@
 # Banking Application Project
 
-**Overview**
+# Overview
 This Banking Application allows users to manage their bank accounts and perform basic CRUD (Create, Read, Update, Delete) operations. The application is designed to facilitate account management, allowing users to create new accounts, view existing account details, update account information, and delete accounts.
 
-**Features**
+# Features
+
 **Create Account:** Allows users to create a new bank account.
 
 **Read Account:** Provides users with the ability to view details of their existing bank accounts.
@@ -12,7 +13,7 @@ This Banking Application allows users to manage their bank accounts and perform 
 
 **Delete Account:** Allows users to delete their bank accounts when needed.
 
-**Technologies Used**
+# Technologies Used
 
 **Programming Language:** Java
 
@@ -22,7 +23,7 @@ This Banking Application allows users to manage their bank accounts and perform 
 
 **API Testing Tool:** Postman
 
-**System Requirements**
+# System Requirements
 
 **Java:** JDK 11 or higher
 
