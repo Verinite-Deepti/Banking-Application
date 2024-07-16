@@ -13,13 +13,13 @@ Body:json
 
 Code
 {
-  "first_name": "John",
-  "last_name": "Doe",
-  "dob": "1980-01-01",
+  "first_name": "Deepti",
+  "last_name": "Wani",
+  "dob": "2003-09-15",
   "accno": "123456789",
   "branch": "Main Branch",
   "address_line1": "123 Main St",
-  "city": "Anytown",
+  "city": "San",
   "state": "CA",
   "pincode": 90001
 }
