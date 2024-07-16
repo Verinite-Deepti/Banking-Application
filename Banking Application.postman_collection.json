@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "c411ea3c-3eea-4e13-94d2-869aa08a17ea",
+		"name": "Banking Application",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "36708209"
+	},
+	"item": [
+		{
+			"name": "post",
+			"item": [
+				{
+					"name": "AccountHolder Details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"jia\",\r\n    \"last_name\": \"kholi\",\r\n    \"dob\": \"2000-07-16\",\r\n    \"accno\": \"000008880000\",\r\n    \"branch\": \"Main Branch\",\r\n    \"address_line1\": \"Harmony park building, Pan Card Club Rd, near malpani it park Harmony park \",\r\n    \"city\": \"Satara\",\r\n    \"state\": \"Maharashtra\",\r\n    \"pincode\": \"4998990\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/accounts"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get",
+			"item": [
+				{
+					"name": "Get By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/accounts/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Get By AccountNo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/accounts/account/0000000000"
+					},
+					"response": []
+				},
+				{
+					"name": "List of All Customers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/accounts"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PUT",
+			"item": [
+				{
+					"name": "Update Details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"cust_id\": 13,\r\n        \"first_name\": \"Geeta\",\r\n        \"last_name\": \"Sharma\",\r\n        \"dob\": \"2000-03-15\",\r\n        \"accno\": \"1000000001\",\r\n        \"branch\": \"Main Branch\",\r\n        \"address_line1\": \"xyz building,  Card Rd, near  abc park \",\r\n        \"city\": \"Mumbai\",\r\n        \"state\": \"Maharashtra\",\r\n        \"pincode\": 411002\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/accounts/11"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Delete",
+			"item": [
+				{
+					"name": "Delete Customer Details",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/accounts/3"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PATCH",
+			"item": [
+				{
+					"name": "Update Details",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"cust_id\": 14,\r\n        \"first_name\":\"Megha\",\r\n        \"last_name\": \"Sawant\",\r\n        \"dob\": \"2001-09-06\",\r\n        \"accno\": \"988888889\",\r\n        \"branch\": \"Main-branch\",\r\n         \"address_line1\": \"lmn building,  Card Rd, near  xyz park \",\r\n        \"city\": \"pune\",\r\n        \"state\": \"Maharashtra\",\r\n        \"pincode\": 788989\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/accounts/1"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
